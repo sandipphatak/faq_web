@@ -5,6 +5,8 @@ a{text-decoration: none;color: #000;}
 html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote, q{quotes:none}blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration: line-through}abbr[title], dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0}input, select{vertical-align:middle}
 /* =================== Reset Css End ==========================*/
 
+/* ================= Common Css ===================*/
+
 .posRelative{position: relative;}
 img{width: auto;height: auto;max-width: 100%;}
 
@@ -33,10 +35,11 @@ img{width: auto;height: auto;max-width: 100%;}
 .title_size_md{font-size: 35px;line-height: 40px;font-weight: 700;}
 .title_size_sm{font-size: 20px;line-height: 28px;font-weight: 600;}
 
-/* ================= Common Layouts Css ===================*/
 .container{width: 1240px;margin: 0 auto;}
 
 .catgory_name {color: #f85656;font-weight: bold;text-transform: uppercase;font-size: 15px;}
+
+/* ================= Common Layouts Css ===================*/
 
 .breadcrumb .breadcrumb_inner {color:#111;font-size:1.6rem;font-weight:600;line-height:1.5;text-transform:capitalize;font-size: 16px;padding: 2em 0;}
 .breadcrumb .breadcrumb_inner a:hover {text-decoration:underline}
@@ -101,6 +104,7 @@ header{background: #f8f8f8;padding: 30px 0;display: flex;align-items: center;jus
 
 .menu{background: #000;padding: 2rem 0;}
 .menu a{color: #fff;font-size: 18px;font-weight: 600;text-transform: uppercase;}
+.menu a:hover{color: #f85656;}
 .menu .dflex{justify-content: space-between}
 
 /* =================== Header Css end==========================*/
@@ -151,7 +155,6 @@ header{background: #f8f8f8;padding: 30px 0;display: flex;align-items: center;jus
 .trending_articles .desc{margin-top: 10px }
 /* .trending_articles .articles_list{flex:1} */
 
-
 .recommended_Wrap{padding: 50px 0 30px ;background: #000;margin-bottom: 60px;overflow: hidden;position: relative;}
 .recommended_sec {padding-left: 20.5em ;margin: 30px 0; padding-left: calc(50% - 620px);}
 .recommended_sec.display_flex{justify-content: flex-start;gap:2em;align-items: flex-start;}
@@ -169,10 +172,9 @@ header{background: #f8f8f8;padding: 30px 0;display: flex;align-items: center;jus
 .foot_link{margin:30px 0 0}
 .foot_link li{flex: .1;text-align: center;}
 .foot_link li a {color: #fff;font-size: 18px ;text-transform: uppercase;font-weight: 700;}
+.foot_link li a:hover{color: #f85656;}
 
 .copyRight{background-color: #fff;padding: 5px 0;color: #747474;font-size: 14px;;text-align: center;}
-
-
 
 @media only screen and (max-width:1300px) {
     .container{width: 96%;}
@@ -180,16 +182,12 @@ header{background: #f8f8f8;padding: 30px 0;display: flex;align-items: center;jus
 
 @media only screen and (max-width:1000px) {
     .menu{display: none;}
-
     .first_block.dflex{flex-direction: column;}
     .trending_articles.dflex{justify-content: flex-start;gap:2em}
     .dflex{flex-wrap:nowrap;}
-
     .first_block .contLeft .display_flex, .left_right_view .popular_blogs .display_flex,  .articles_sideBar .trending_articles .display_flex{flex-direction: row;}
     .first_block.display_flex,.articles_page_wrap  .display_flex,.categories_page.display_flex {flex-direction: column;}
-
     .articles_sideBar::before{background: none;}
-
 }
 
 @media only screen and (max-width:767px) {
@@ -218,6 +216,7 @@ header{background: #f8f8f8;padding: 30px 0;display: flex;align-items: center;jus
     .dflex{flex-wrap:wrap;}
     .foot_link.dflex{gap: 0.8em;flex-direction: column;}
 
+    .popular_articlesWrap{padding: 50px 0 0;}  
     .recommended_sec {padding: 0 20px;}
 
     .card_blog{width:100%;}
